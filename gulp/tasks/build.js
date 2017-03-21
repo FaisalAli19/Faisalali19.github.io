@@ -64,7 +64,7 @@ gulp.task("usemin", ["styles", "scripts"], function() {
             css: [function() {return rev()}, function() {return cssnano()}],
             js: [function() {return rev()}, function() {return uglify()}]
         }))
-        .pipe(gulp.dest("./docs"));
+        .pipe(gulp.dest("./"));
 });
 
 //This function will compress and revise the styles and scripts files and copy pages folder and files.
